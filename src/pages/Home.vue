@@ -1,5 +1,15 @@
 <template>
   <div class="container">
+    <div>
+      <b-jumbotron
+        style="background-color:#F0E5CF;color:#4B6587"
+        header="How much does it cost to buy THESE Apple products?"
+        lead="幫您計算即將花多少錢在蘋果產品上"
+      >
+        <p>Power by Edzyl</p>
+        <el-button round onclick="location.href='https://linktr.ee/edzyl'" style="background-color:#4B6587;color:#fff">More Info</el-button>
+      </b-jumbotron>
+    </div>
     <el-row type="flex" class="row-bg" justify="center">
       <el-col :span="24">
         <el-card shadow="hover">
@@ -171,140 +181,6 @@
             </div>
           </el-row>
         </el-card>
-        <el-collapse v-model="activeNames">
-          <el-collapse-item title="舊機種" name="1">
-            <el-card shadow="hover">
-              <p>{{ model[4] }}</p>
-              <el-row
-                type="flex"
-                class="row-bg"
-                justify="center"
-                style="flex-wrap: wrap"
-              >
-                <div>
-                  <p>{{ storage_capacity[4] }}</p>
-                  <el-input-number
-                    v-model="shopping_cart[14]"
-                    @change="Count"
-                    controls-position="right"
-                    :min="0"
-                  ></el-input-number>
-                </div>
-                <div>
-                  <p>{{ storage_capacity[0] }}</p>
-                  <el-input-number
-                    v-model="shopping_cart[15]"
-                    @change="Count"
-                    controls-position="right"
-                    :min="0"
-                  ></el-input-number>
-                </div>
-                <div>
-                  <p>{{ storage_capacity[1] }}</p>
-                  <el-input-number
-                    v-model="shopping_cart[16]"
-                    @change="Count"
-                    controls-position="right"
-                    :min="0"
-                  ></el-input-number>
-                </div>
-              </el-row>
-            </el-card>
-            <el-card shadow="hover">
-              <p>{{ model[5] }}</p>
-              <el-row
-                type="flex"
-                class="row-bg"
-                justify="center"
-                style="flex-wrap: wrap"
-              >
-                <div>
-                  <p>{{ storage_capacity[4] }}</p>
-                  <el-input-number
-                    v-model="shopping_cart[17]"
-                    @change="Count"
-                    controls-position="right"
-                    :min="0"
-                  ></el-input-number>
-                </div>
-                <div>
-                  <p>{{ storage_capacity[0] }}</p>
-                  <el-input-number
-                    v-model="shopping_cart[18]"
-                    @change="Count"
-                    controls-position="right"
-                    :min="0"
-                  ></el-input-number>
-                </div>
-                <div>
-                  <p>{{ storage_capacity[1] }}</p>
-                  <el-input-number
-                    v-model="shopping_cart[19]"
-                    @change="Count"
-                    controls-position="right"
-                    :min="0"
-                  ></el-input-number>
-                </div>
-              </el-row>
-            </el-card>
-            <el-card shadow="hover">
-              <p>{{ model[6] }}</p>
-              <el-row
-                type="flex"
-                class="row-bg"
-                justify="center"
-                style="flex-wrap: wrap"
-              >
-                <div>
-                  <p>{{ storage_capacity[4] }}</p>
-                  <el-input-number
-                    v-model="shopping_cart[20]"
-                    @change="Count"
-                    controls-position="right"
-                    :min="0"
-                  ></el-input-number>
-                </div>
-                <div>
-                  <p>{{ storage_capacity[0] }}</p>
-                  <el-input-number
-                    v-model="shopping_cart[21]"
-                    @change="Count"
-                    controls-position="right"
-                    :min="0"
-                  ></el-input-number>
-                </div>
-              </el-row>
-            </el-card>
-            <el-card shadow="hover">
-              <p>{{ model[7] }}</p>
-              <el-row
-                type="flex"
-                class="row-bg"
-                justify="center"
-                style="flex-wrap: wrap"
-              >
-                <div>
-                  <p>{{ storage_capacity[4] }}</p>
-                  <el-input-number
-                    v-model="shopping_cart[22]"
-                    @change="Count"
-                    controls-position="right"
-                    :min="0"
-                  ></el-input-number>
-                </div>
-                <div>
-                  <p>{{ storage_capacity[0] }}</p>
-                  <el-input-number
-                    v-model="shopping_cart[23]"
-                    @change="Count"
-                    controls-position="right"
-                    :min="0"
-                  ></el-input-number>
-                </div>
-              </el-row>
-            </el-card>
-          </el-collapse-item>
-        </el-collapse>
         <el-card shadow="hover">
           <p>{{ model[8] }}</p>
           <el-row
@@ -362,8 +238,159 @@
           </el-row>
         </el-card>
 
-        <h5>NTD:{{ total_price }}</h5>
-        <el-button icon="el-icon-delete" v-on:click="Clear"></el-button>
+        <div class="accordion" role="tablist">
+          <b-card no-body class="mb-1">
+            <b-card-header header-tag="header" class="p-1" role="tab">
+              <b-button block v-b-toggle.accordion-1 variant="light"
+                >查看舊機種</b-button
+              >
+            </b-card-header>
+            <b-collapse
+              id="accordion-1"
+              accordion="my-accordion"
+              role="tabpanel"
+            >
+              <b-card-body>
+                <el-card shadow="hover">
+                  <p>{{ model[4] }}</p>
+                  <el-row
+                    type="flex"
+                    class="row-bg"
+                    justify="center"
+                    style="flex-wrap: wrap"
+                  >
+                    <div>
+                      <p>{{ storage_capacity[4] }}</p>
+                      <el-input-number
+                        v-model="shopping_cart[14]"
+                        @change="Count"
+                        controls-position="right"
+                        :min="0"
+                      ></el-input-number>
+                    </div>
+                    <div>
+                      <p>{{ storage_capacity[0] }}</p>
+                      <el-input-number
+                        v-model="shopping_cart[15]"
+                        @change="Count"
+                        controls-position="right"
+                        :min="0"
+                      ></el-input-number>
+                    </div>
+                    <div>
+                      <p>{{ storage_capacity[1] }}</p>
+                      <el-input-number
+                        v-model="shopping_cart[16]"
+                        @change="Count"
+                        controls-position="right"
+                        :min="0"
+                      ></el-input-number>
+                    </div>
+                  </el-row>
+                </el-card>
+                <el-card shadow="hover">
+                  <p>{{ model[5] }}</p>
+                  <el-row
+                    type="flex"
+                    class="row-bg"
+                    justify="center"
+                    style="flex-wrap: wrap"
+                  >
+                    <div>
+                      <p>{{ storage_capacity[4] }}</p>
+                      <el-input-number
+                        v-model="shopping_cart[17]"
+                        @change="Count"
+                        controls-position="right"
+                        :min="0"
+                      ></el-input-number>
+                    </div>
+                    <div>
+                      <p>{{ storage_capacity[0] }}</p>
+                      <el-input-number
+                        v-model="shopping_cart[18]"
+                        @change="Count"
+                        controls-position="right"
+                        :min="0"
+                      ></el-input-number>
+                    </div>
+                    <div>
+                      <p>{{ storage_capacity[1] }}</p>
+                      <el-input-number
+                        v-model="shopping_cart[19]"
+                        @change="Count"
+                        controls-position="right"
+                        :min="0"
+                      ></el-input-number>
+                    </div>
+                  </el-row>
+                </el-card>
+                <el-card shadow="hover">
+                  <p>{{ model[6] }}</p>
+                  <el-row
+                    type="flex"
+                    class="row-bg"
+                    justify="center"
+                    style="flex-wrap: wrap"
+                  >
+                    <div>
+                      <p>{{ storage_capacity[4] }}</p>
+                      <el-input-number
+                        v-model="shopping_cart[20]"
+                        @change="Count"
+                        controls-position="right"
+                        :min="0"
+                      ></el-input-number>
+                    </div>
+                    <div>
+                      <p>{{ storage_capacity[0] }}</p>
+                      <el-input-number
+                        v-model="shopping_cart[21]"
+                        @change="Count"
+                        controls-position="right"
+                        :min="0"
+                      ></el-input-number>
+                    </div>
+                  </el-row>
+                </el-card>
+                <el-card shadow="hover">
+                  <p>{{ model[7] }}</p>
+                  <el-row
+                    type="flex"
+                    class="row-bg"
+                    justify="center"
+                    style="flex-wrap: wrap"
+                  >
+                    <div>
+                      <p>{{ storage_capacity[4] }}</p>
+                      <el-input-number
+                        v-model="shopping_cart[22]"
+                        @change="Count"
+                        controls-position="right"
+                        :min="0"
+                      ></el-input-number>
+                    </div>
+                    <div>
+                      <p>{{ storage_capacity[0] }}</p>
+                      <el-input-number
+                        v-model="shopping_cart[23]"
+                        @change="Count"
+                        controls-position="right"
+                        :min="0"
+                      ></el-input-number>
+                    </div>
+                  </el-row>
+                </el-card>
+              </b-card-body>
+            </b-collapse>
+          </b-card>
+        </div>
+        <b-card header="總金額" class="text-center">
+          <b-card-text
+            ><h5>NTD: {{ total_price }}</h5>
+          </b-card-text>
+          <el-button icon="el-icon-delete" v-on:click="Clear"></el-button>
+        </b-card>
       </el-col>
     </el-row>
   </div>
@@ -412,7 +439,9 @@ export default {
         0,
         0,
         0,
-        0,0,0
+        0,
+        0,
+        0,
       ],
       price: [
         22900,
@@ -440,7 +469,9 @@ export default {
         16500,
         18100,
         14900,
-        19400,3090,4190
+        19400,
+        3090,
+        4190,
       ],
       total_price: 0,
     };
@@ -452,12 +483,17 @@ export default {
         this.total_price =
           this.total_price + this.shopping_cart[index] * this.price[index];
       }
+      this.total_price = this.PriceFormat(this.total_price, 2);
     },
     Clear() {
       this.total_price = 0;
       for (let index = 0; index < this.shopping_cart.length; index++) {
         this.shopping_cart[index] = 0;
       }
+    },
+    PriceFormat(price, n, x) {
+      var re = "\\d(?=(\\d{" + (x || 3) + "})+" + (n > 0 ? "\\." : "$") + ")";
+      return price.toFixed(Math.max(0, ~~n)).replace(new RegExp(re, "g"), "$&,");
     },
   },
 };
@@ -475,5 +511,11 @@ html {
 
 .row .col-4 {
   padding: 0px;
+}
+.el-card {
+  background-color: #fff;
+}
+.card-header{
+ background-color:#4B6587
 }
 </style>
