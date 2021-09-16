@@ -516,6 +516,7 @@ html {
   background-color: #fff;
 }
 .card-header{
- background-color:#4B6587
+ background-color:#4B6587;
+ color:#fff
 }
 </style>
