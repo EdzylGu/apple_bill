@@ -2,7 +2,7 @@
 module.exports = {
     // ...other vue-cli plugin options...
     pwa: {
-        name: 'Tewkr',
+        name: 'apple bill',
         themeColor: '#5dac81',
         msTileColor: '#000000',
         appleMobileWebAppCapable: 'yes',
@@ -16,6 +16,5 @@ module.exports = {
         }
     },
     publicPath: process.env.NODE_ENV === 'production' ?
-        '/apple_bill/' :
-        '/'
+        '/apple_bill/' : '/'
 }
