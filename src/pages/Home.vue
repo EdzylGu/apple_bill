@@ -25,7 +25,7 @@
             justify="center"
             style="flex-wrap: wrap"
           >
-            <div>
+            <el-card>
               <p>{{ storage_capacity[0] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[0] }}</el-tag
@@ -36,8 +36,8 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
-            <div>
+            </el-card>
+            <el-card>
               <p>{{ storage_capacity[1] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[1] }}</el-tag
@@ -49,8 +49,8 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
-            <div>
+            </el-card>
+            <el-card>
               <p>{{ storage_capacity[2] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[2] }}</el-tag
@@ -61,7 +61,7 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
+            </el-card>
           </el-row>
         </el-card>
 
@@ -73,7 +73,7 @@
             justify="center"
             style="flex-wrap: wrap"
           >
-            <div>
+            <el-card>
               <p>{{ storage_capacity[0] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[3] }}</el-tag
@@ -85,8 +85,8 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
-            <div>
+            </el-card>
+            <el-card>
               <p>{{ storage_capacity[1] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[4] }}</el-tag
@@ -98,8 +98,8 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
-            <div>
+            </el-card>
+            <el-card>
               <p>{{ storage_capacity[2] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[5] }}</el-tag
@@ -111,7 +111,7 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
+            </el-card>
           </el-row>
         </el-card>
 
@@ -123,7 +123,7 @@
             justify="center"
             style="flex-wrap: wrap"
           >
-            <div>
+            <el-card>
               <p>{{ storage_capacity[0] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[6] }}</el-tag
@@ -135,8 +135,8 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
-            <div>
+            </el-card>
+            <el-card>
               <p>{{ storage_capacity[1] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[7] }}</el-tag
@@ -148,8 +148,8 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
-            <div>
+            </el-card>
+            <el-card>
               <p>{{ storage_capacity[2] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[8] }}</el-tag
@@ -161,8 +161,8 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
-            <div>
+            </el-card>
+            <el-card>
               <p>{{ storage_capacity[3] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[9] }}</el-tag
@@ -174,7 +174,7 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
+            </el-card>
           </el-row>
         </el-card>
 
@@ -186,7 +186,7 @@
             justify="center"
             style="flex-wrap: wrap"
           >
-            <div>
+            <el-card>
               <p>{{ storage_capacity[0] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[10] }}</el-tag
@@ -198,8 +198,8 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
-            <div>
+            </el-card>
+            <el-card>
               <p>{{ storage_capacity[1] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[11] }}</el-tag
@@ -211,8 +211,8 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
-            <div>
+            </el-card>
+            <el-card>
               <p>{{ storage_capacity[2] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[12] }}</el-tag
@@ -224,8 +224,8 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
-            <div>
+            </el-card>
+            <el-card>
               <p>{{ storage_capacity[3] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[13] }}</el-tag
@@ -237,7 +237,7 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
+            </el-card>
           </el-row>
         </el-card>
         <el-card shadow="hover">
@@ -248,7 +248,7 @@
             justify="center"
             style="flex-wrap: wrap"
           >
-            <div>
+            <el-card>
               <p>{{ storage_capacity[4] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[24] }}</el-tag
@@ -260,8 +260,8 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
-            <div>
+            </el-card>
+            <el-card>
               <p>{{ storage_capacity[1] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[25] }}</el-tag
@@ -273,7 +273,7 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
+            </el-card>
           </el-row>
         </el-card>
         <el-card shadow="hover">
@@ -284,7 +284,7 @@
             justify="center"
             style="flex-wrap: wrap"
           >
-            <div>
+            <el-card>
               <p>{{ storage_capacity[5] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[26] }}</el-tag
@@ -296,8 +296,8 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
-            <div>
+            </el-card>
+            <el-card>
               <p>{{ storage_capacity[6] }}</p>
               <el-tag effect="plain"
                 ><i class="el-icon-price-tag"></i>{{ price[27] }}</el-tag
@@ -309,7 +309,7 @@
                 controls-position="right"
                 :min="0"
               ></el-input-number>
-            </div>
+            </el-card>
           </el-row>
         </el-card>
 
@@ -334,7 +334,7 @@
                     justify="center"
                     style="flex-wrap: wrap"
                   >
-                    <div>
+                    <el-card>
                       <p>{{ storage_capacity[4] }}</p>
                       <el-tag effect="plain"
                         ><i class="el-icon-price-tag"></i
@@ -347,8 +347,8 @@
                         controls-position="right"
                         :min="0"
                       ></el-input-number>
-                    </div>
-                    <div>
+                    </el-card>
+                    <el-card>
                       <p>{{ storage_capacity[0] }}</p>
                       <el-tag effect="plain"
                         ><i class="el-icon-price-tag"></i
@@ -361,8 +361,8 @@
                         controls-position="right"
                         :min="0"
                       ></el-input-number>
-                    </div>
-                    <div>
+                    </el-card>
+                    <el-card>
                       <p>{{ storage_capacity[1] }}</p>
                       <el-tag effect="plain"
                         ><i class="el-icon-price-tag"></i
@@ -375,7 +375,7 @@
                         controls-position="right"
                         :min="0"
                       ></el-input-number>
-                    </div>
+                    </el-card>
                   </el-row>
                 </el-card>
                 <el-card shadow="hover">
@@ -386,7 +386,7 @@
                     justify="center"
                     style="flex-wrap: wrap"
                   >
-                    <div>
+                    <el-card>
                       <p>{{ storage_capacity[4] }}</p>
                       <el-tag effect="plain"
                         ><i class="el-icon-price-tag"></i
@@ -399,8 +399,8 @@
                         controls-position="right"
                         :min="0"
                       ></el-input-number>
-                    </div>
-                    <div>
+                    </el-card>
+                    <el-card>
                       <p>{{ storage_capacity[0] }}</p>
                       <el-tag effect="plain"
                         ><i class="el-icon-price-tag"></i
@@ -413,8 +413,8 @@
                         controls-position="right"
                         :min="0"
                       ></el-input-number>
-                    </div>
-                    <div>
+                    </el-card>
+                    <el-card>
                       <p>{{ storage_capacity[1] }}</p>
                       <el-tag effect="plain"
                         ><i class="el-icon-price-tag"></i
@@ -427,7 +427,7 @@
                         controls-position="right"
                         :min="0"
                       ></el-input-number>
-                    </div>
+                    </el-card>
                   </el-row>
                 </el-card>
                 <el-card shadow="hover">
@@ -438,7 +438,7 @@
                     justify="center"
                     style="flex-wrap: wrap"
                   >
-                    <div>
+                    <el-card>
                       <p>{{ storage_capacity[4] }}</p>
                       <el-tag effect="plain"
                         ><i class="el-icon-price-tag"></i
@@ -451,8 +451,8 @@
                         controls-position="right"
                         :min="0"
                       ></el-input-number>
-                    </div>
-                    <div>
+                    </el-card>
+                    <el-card>
                       <p>{{ storage_capacity[0] }}</p>
                       <el-tag effect="plain"
                         ><i class="el-icon-price-tag"></i
@@ -465,7 +465,7 @@
                         controls-position="right"
                         :min="0"
                       ></el-input-number>
-                    </div>
+                    </el-card>
                   </el-row>
                 </el-card>
                 <el-card shadow="hover">
@@ -476,7 +476,7 @@
                     justify="center"
                     style="flex-wrap: wrap"
                   >
-                    <div>
+                    <el-card>
                       <p>{{ storage_capacity[4] }}</p>
                       <el-tag effect="plain"
                         ><i class="el-icon-price-tag"></i
@@ -489,8 +489,8 @@
                         controls-position="right"
                         :min="0"
                       ></el-input-number>
-                    </div>
-                    <div>
+                    </el-card>
+                    <el-card>
                       <p>{{ storage_capacity[0] }}</p>
                       <el-tag effect="plain"
                         ><i class="el-icon-price-tag"></i
@@ -503,7 +503,7 @@
                         controls-position="right"
                         :min="0"
                       ></el-input-number>
-                    </div>
+                    </el-card>
                   </el-row>
                 </el-card>
               </b-card-body>
