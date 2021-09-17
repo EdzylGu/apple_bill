@@ -7,7 +7,12 @@
         lead="幫您計算即將花多少錢在蘋果產品上"
       >
         <p>Power by Edzyl</p>
-        <el-button round onclick="location.href='https://linktr.ee/edzyl'" style="background-color:#4B6587;color:#fff">More Info</el-button>
+        <el-button
+          round
+          onclick="location.href='https://linktr.ee/edzyl'"
+          style="background-color:#4B6587;color:#fff"
+          >More Info</el-button
+        >
       </b-jumbotron>
     </div>
     <el-row type="flex" class="row-bg" justify="center">
@@ -22,6 +27,9 @@
           >
             <div>
               <p>{{ storage_capacity[0] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[0] }}</el-tag
+              ><br /><br />
               <el-input-number
                 v-model="shopping_cart[0]"
                 @change="Count"
@@ -31,6 +39,10 @@
             </div>
             <div>
               <p>{{ storage_capacity[1] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[1] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[1]"
                 @change="Count"
@@ -40,6 +52,9 @@
             </div>
             <div>
               <p>{{ storage_capacity[2] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[2] }}</el-tag
+              ><br /><br />
               <el-input-number
                 v-model="shopping_cart[2]"
                 @change="Count"
@@ -60,6 +75,10 @@
           >
             <div>
               <p>{{ storage_capacity[0] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[3] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[3]"
                 @change="Count"
@@ -69,6 +88,10 @@
             </div>
             <div>
               <p>{{ storage_capacity[1] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[4] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[4]"
                 @change="Count"
@@ -78,6 +101,10 @@
             </div>
             <div>
               <p>{{ storage_capacity[2] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[5] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[5]"
                 @change="Count"
@@ -98,6 +125,10 @@
           >
             <div>
               <p>{{ storage_capacity[0] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[6] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[6]"
                 @change="Count"
@@ -107,6 +138,10 @@
             </div>
             <div>
               <p>{{ storage_capacity[1] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[7] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[7]"
                 @change="Count"
@@ -116,6 +151,10 @@
             </div>
             <div>
               <p>{{ storage_capacity[2] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[8] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[8]"
                 @change="Count"
@@ -125,6 +164,10 @@
             </div>
             <div>
               <p>{{ storage_capacity[3] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[9] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[9]"
                 @change="Count"
@@ -145,6 +188,10 @@
           >
             <div>
               <p>{{ storage_capacity[0] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[10] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[10]"
                 @change="Count"
@@ -154,6 +201,10 @@
             </div>
             <div>
               <p>{{ storage_capacity[1] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[11] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[11]"
                 @change="Count"
@@ -163,6 +214,10 @@
             </div>
             <div>
               <p>{{ storage_capacity[2] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[12] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[12]"
                 @change="Count"
@@ -172,6 +227,10 @@
             </div>
             <div>
               <p>{{ storage_capacity[3] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[13] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[13]"
                 @change="Count"
@@ -191,6 +250,10 @@
           >
             <div>
               <p>{{ storage_capacity[4] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[24] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[24]"
                 @change="Count"
@@ -200,6 +263,10 @@
             </div>
             <div>
               <p>{{ storage_capacity[1] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[25] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[25]"
                 @change="Count"
@@ -219,6 +286,10 @@
           >
             <div>
               <p>{{ storage_capacity[5] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[26] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[26]"
                 @change="Count"
@@ -228,6 +299,10 @@
             </div>
             <div>
               <p>{{ storage_capacity[6] }}</p>
+              <el-tag effect="plain"
+                ><i class="el-icon-price-tag"></i>{{ price[27] }}</el-tag
+              ><br /><br />
+
               <el-input-number
                 v-model="shopping_cart[27]"
                 @change="Count"
@@ -261,6 +336,11 @@
                   >
                     <div>
                       <p>{{ storage_capacity[4] }}</p>
+                      <el-tag effect="plain"
+                        ><i class="el-icon-price-tag"></i
+                        >{{ price[14] }}</el-tag
+                      ><br /><br />
+
                       <el-input-number
                         v-model="shopping_cart[14]"
                         @change="Count"
@@ -270,6 +350,11 @@
                     </div>
                     <div>
                       <p>{{ storage_capacity[0] }}</p>
+                      <el-tag effect="plain"
+                        ><i class="el-icon-price-tag"></i
+                        >{{ price[15] }}</el-tag
+                      ><br /><br />
+
                       <el-input-number
                         v-model="shopping_cart[15]"
                         @change="Count"
@@ -279,6 +364,11 @@
                     </div>
                     <div>
                       <p>{{ storage_capacity[1] }}</p>
+                      <el-tag effect="plain"
+                        ><i class="el-icon-price-tag"></i
+                        >{{ price[16] }}</el-tag
+                      ><br /><br />
+
                       <el-input-number
                         v-model="shopping_cart[16]"
                         @change="Count"
@@ -298,6 +388,11 @@
                   >
                     <div>
                       <p>{{ storage_capacity[4] }}</p>
+                      <el-tag effect="plain"
+                        ><i class="el-icon-price-tag"></i
+                        >{{ price[17] }}</el-tag
+                      ><br /><br />
+
                       <el-input-number
                         v-model="shopping_cart[17]"
                         @change="Count"
@@ -307,6 +402,11 @@
                     </div>
                     <div>
                       <p>{{ storage_capacity[0] }}</p>
+                      <el-tag effect="plain"
+                        ><i class="el-icon-price-tag"></i
+                        >{{ price[18] }}</el-tag
+                      ><br /><br />
+
                       <el-input-number
                         v-model="shopping_cart[18]"
                         @change="Count"
@@ -316,6 +416,11 @@
                     </div>
                     <div>
                       <p>{{ storage_capacity[1] }}</p>
+                      <el-tag effect="plain"
+                        ><i class="el-icon-price-tag"></i
+                        >{{ price[19] }}</el-tag
+                      ><br /><br />
+
                       <el-input-number
                         v-model="shopping_cart[19]"
                         @change="Count"
@@ -335,6 +440,11 @@
                   >
                     <div>
                       <p>{{ storage_capacity[4] }}</p>
+                      <el-tag effect="plain"
+                        ><i class="el-icon-price-tag"></i
+                        >{{ price[20] }}</el-tag
+                      ><br /><br />
+
                       <el-input-number
                         v-model="shopping_cart[20]"
                         @change="Count"
@@ -344,6 +454,11 @@
                     </div>
                     <div>
                       <p>{{ storage_capacity[0] }}</p>
+                      <el-tag effect="plain"
+                        ><i class="el-icon-price-tag"></i
+                        >{{ price[21] }}</el-tag
+                      ><br /><br />
+
                       <el-input-number
                         v-model="shopping_cart[21]"
                         @change="Count"
@@ -363,6 +478,11 @@
                   >
                     <div>
                       <p>{{ storage_capacity[4] }}</p>
+                      <el-tag effect="plain"
+                        ><i class="el-icon-price-tag"></i
+                        >{{ price[22] }}</el-tag
+                      ><br /><br />
+
                       <el-input-number
                         v-model="shopping_cart[22]"
                         @change="Count"
@@ -372,6 +492,11 @@
                     </div>
                     <div>
                       <p>{{ storage_capacity[0] }}</p>
+                      <el-tag effect="plain"
+                        ><i class="el-icon-price-tag"></i
+                        >{{ price[23] }}</el-tag
+                      ><br /><br />
+
                       <el-input-number
                         v-model="shopping_cart[23]"
                         @change="Count"
@@ -493,7 +618,9 @@ export default {
     },
     PriceFormat(price, n, x) {
       var re = "\\d(?=(\\d{" + (x || 3) + "})+" + (n > 0 ? "\\." : "$") + ")";
-      return price.toFixed(Math.max(0, ~~n)).replace(new RegExp(re, "g"), "$&,");
+      return price
+        .toFixed(Math.max(0, ~~n))
+        .replace(new RegExp(re, "g"), "$&,");
     },
   },
 };
@@ -515,8 +642,8 @@ html {
 .el-card {
   background-color: #fff;
 }
-.card-header{
- background-color:#4B6587;
- color:#fff
+.card-header {
+  background-color: #4b6587;
+  color: #fff;
 }
 </style>
