@@ -24,7 +24,7 @@ const router = new VueRouter({
 });
 
 Vue.use(VueAnalytics, {
-  id: 'UA-46828690-2',
+  id: 'G-KC0VX4TEKG',
   router,
   autoTracking: {
     pageviewOnLoad: false
